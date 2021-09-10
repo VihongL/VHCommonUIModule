@@ -24,7 +24,7 @@ TODO: 添加几个类文件、资源文件.
 
 #  通过编译产物xxx.app查看包内容，会发现这种方式会自动在framework里面生成VHCommonUIModule.bundle，最终生成的路径 Frameworks/VHCommonUIModule.framework/VHCommonUIModule.bundle/VHCommonUIModuleBundle.bundle
 #  s.resource_bundles = {
-#    'VHCommonUIModule' => ['VHCommonUIModule/Assets/VHCommonUIModuleBundle.bundle']
+#    'VHCommonUIModule' => ['Assets/VHCommonUIModuleBundle.bundle']
 #  }
    #也可以通过这种方式指定资源，这种方式最终生成的路径Frameworks/VHCommonUIModule.framework/VHCommonUIModuleBundle.bundle
    s.resource     = 'Assets/VHCommonUIModuleBundle.bundle'
@@ -32,6 +32,7 @@ TODO: 添加几个类文件、资源文件.
   #依赖库
   s.dependency 'Masonry'
   s.dependency 'VHMacroAndCategoryModule'
+  #s.dependency 'VHPodTest'
   
   #依赖库的头文件导入
   s.prefix_header_contents = '#import "VHMacros.h"','#import "Masonry.h"'
