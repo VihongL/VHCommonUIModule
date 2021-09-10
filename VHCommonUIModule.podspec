@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VHCommonUIModule'
   s.version          = '1.0.2'
-  s.summary          = 'A short description of VHCommonUIModule.'
+  s.summary          = '创建一个UI库.'
 
   s.description      = <<-DESC
 TODO: 添加几个类文件、资源文件.
